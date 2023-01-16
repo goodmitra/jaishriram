@@ -1,0 +1,219 @@
+html,
+body
+/* div, */ {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://user-images.githubusercontent.com/21957159/148267821-aaac7e83-8529-4ebd-a685-03c5bc6589f1.jpg")
+    no-repeat fixed center;
+  background-size: cover;
+}
+
+.fa-2x {
+  font-size: 1.5em;
+}
+
+.app {
+  position: relative;
+  overflow: hidden;
+  top: 93px;
+  height: calc(90% - 38px);
+  width: 78.5%;
+  margin: auto;
+  padding: 0;
+  z-index: -1;
+}
+
+.app-one {
+  background-color: #f7f7f7;
+  height: 90%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.heading {
+  padding: 10px 16px 10px 15px;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #f7f7f7;
+  z-index: 1000;
+}
+
+.icon-wa {
+  color: #1b1b1b;
+}
+
+.whatsapp-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #b6aeae;
+}
+
+.p-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #636262;
+}
+.footer {
+  bottom: 0;
+  position: relative;
+  display: flow-root;
+  vertical-align: bottom;
+}
+.help {
+  cursor: pointer;
+  padding: 45px;
+}
+
+@media only screen and (min-width: 680px) {
+  .landing-header {
+    display: none;
+  }
+  .landing-left {
+    padding-left: 42px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    color: #525252;
+  }
+  .landing-right {
+    padding-left: 42px;
+    line-height: normal;
+    color: #525252;
+  }
+
+  .landing-left-item {
+    padding-left: 60px;
+    color: #413d3d;
+    flex: none;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 700px) {
+  .app {
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .heading {
+    height: 90px;
+    background-color: #009688;
+  }
+
+  .landing-header {
+    padding-left: 36px;
+    box-sizing: border-box;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 39px;
+  }
+
+  .landing-headerTitle {
+    display: inline-block;
+    margin-left: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .landing-left {
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    color: #525252;
+  }
+  .landing-right {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    color: #525252;
+  }
+  .landing-right img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fa-2x {
+    font-size: 2.3em !important;
+  }
+
+  .help {
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+/* Pace  */
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background: #1b1b1b;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+  overflow: hidden;
+  position: fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
